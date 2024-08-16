@@ -91,6 +91,32 @@ modalCloses.forEach((modalClose) => {
 });
 /*==================== PORTFOLIO SWIPER  ====================*/
 
+let swiper = new Swiper(".portfolio__container", {
+  // cssMode: true,
+  loop: true, // Enable loop
+  slidesPerView: 1, // Show one slide at a time
+  spaceBetween: 30, // Space between slides
+  autoplay: {
+    delay: 3000, // Set autoplay delay to 3 seconds
+    disableOnInteraction: false, // Keep autoplay active after interaction
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true, // Make pagination clickable
+  },
+  loopAdditionalSlides: 1, // Add additional slides for a smoother loop
+  centeredSlides: true, // Ensure slides are centered
+  on: {
+    init: function () {
+      this.loopFix(); // Ensures smooth looping
+    },
+  },
+});
+
 /*==================== TESTIMONIAL ====================*/
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
