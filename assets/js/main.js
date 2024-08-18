@@ -92,12 +92,12 @@ modalCloses.forEach((modalClose) => {
 /*==================== PORTFOLIO SWIPER  ====================*/
 
 let swipePortfolio = new Swiper(".portfolio__container", {
-  // cssMode: true,
+  cssMode: true,
   loop: true, // Enable loop
   slidesPerView: 1, // Show one slide at a time
   spaceBetween: 30, // Space between slides
   autoplay: {
-    delay: 3000, // Set autoplay delay to 3 seconds
+    delay: 6000, // Set autoplay delay to 6 seconds
     disableOnInteraction: false, // Keep autoplay active after interaction
   },
   navigation: {
@@ -107,6 +107,16 @@ let swipePortfolio = new Swiper(".portfolio__container", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true, // Make pagination clickable
+  },
+  breakpoints: {
+    2560: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    2232: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
   },
   loopAdditionalSlides: 1, // Add additional slides for a smoother loop
   centeredSlides: true, // Ensure slides are centered
@@ -140,6 +150,10 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
   breakpoints: {
     568: {
       slidesPerView: 2,
+    },
+    2560: {
+      slidesPerView: 3,
+      spaceBetween: 30,
     },
   },
   loopAdditionalSlides: 1, // Add additional slides for a smoother loop
