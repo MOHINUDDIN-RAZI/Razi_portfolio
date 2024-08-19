@@ -800,10 +800,6 @@ display: flex;
 .swiper-pagination-bullets{
   outline: none;
 }
-
-.portfolio-container {
-  overflow: initial;
-}
 /*==================== PROJECT IN MIND ====================*/
 .project{
   text-align: center;
