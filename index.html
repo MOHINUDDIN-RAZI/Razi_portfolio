@@ -1024,42 +1024,66 @@
             </div>
           </div>
 
-          <form action="" class="contact__form grid">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact__form grid"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="a07788b9-df3c-4a3f-805a-434e166bb76b"
+            />
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input" />
+                <input
+                  type="text"
+                  class="contact__input"
+                  name="name"
+                  required
+                />
               </div>
               <div class="contact__content">
                 <label for="" class="contact__label">Email</label>
-                <input type="email" class="contact__input" />
+                <input
+                  type="email"
+                  class="contact__input"
+                  name="email"
+                  required
+                />
               </div>
             </div>
             <div class="contact__content">
-              <label for="" class="contact__label">Project</label>
-              <input type="text" class="contact__input" />
+              <label for="" class="contact__label">Subject</label>
+              <input
+                type="text"
+                class="contact__input"
+                name="subject"
+                required
+              />
             </div>
             <div class="contact__content">
               <label for="" class="contact__label">Message</label>
               <textarea
-                name=""
+                name="message"
                 id=""
                 cols="0"
                 rows="7"
                 class="contact__input"
+                required
               ></textarea>
             </div>
             <div>
-              <a href="" class="button button--flex">
+              <button type="submit" class="button button--flex">
                 Send Message
                 <i class="uil uil-message button__icon"></i>
-              </a>
+              </button>
             </div>
           </form>
         </div>
       </section>
     </main>
-
     <!--==================== FOOTER ====================-->
     <footer class="footer">
       <div class="footer__bg">
