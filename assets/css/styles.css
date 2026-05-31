@@ -528,16 +528,23 @@ padding-left: 2.7rem;
 }
 
 .skills__html{
-  width: 90%
+  width: 98%
 }
 .skills__css{
-  width: 80%
+  width: 96%
 }
 .skills__js{
-  width: 60%
+  width: 86%
 }
+.skills__ts{
+  width: 84%
+}
+
 .skills__react{
-  width: 50%
+  width: 82%
+}
+.skills__vue{
+  width: 80%
 }
 
 .skills__php{
